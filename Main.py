@@ -1,4 +1,4 @@
-from math_function import add
+from Math_function import add, multiply, divide
 
 
 def main():
@@ -9,8 +9,16 @@ def main():
 
     if operator == "+":
         result = add(data_1, data_2)
+        print("{} {} {} = {} ".format(data_1, operator, data_2, result))
+    
+    elif operator == "*":
+        result = multiply(data_1, data_2)
+        print("{} {} {} = {} ".format(data_1, operator, data_2, result))
 
-    print("{} {} {} = {} ".format(data_1, operator, data_2, result))
+    elif operator == "/":
+        result = divide(data_1, data_2)
+        print("{} {} {} = {} ".format(data_1, operator, data_2, result))
+    
 
 
 if __name__ == "__main__":
